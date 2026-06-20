@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Aguilar | Mi Página Web</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* ENCABEZADO */
+        header {
+            background: linear-gradient(135deg, #165DFF, #3685FF);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 1.5rem;
+        }
+
+        .card h2 {
+            color: #165DFF;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #eaf2ff;
+            padding-bottom: 0.3rem;
+        }
+
+        /* IMAGEN */
+        .foto-perfil {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #f0f6ff;
+            display: block;
+            margin: 0 auto 1.5rem;
+        }
+
+        /* LISTA */
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        ul li::before {
+            content: "✓";
+            color: #165DFF;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        /* BOTÓN DE CONTACTO */
+        .boton {
+            display: inline-block;
+            background-color: #165DFF;
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background 0.3s;
+        }
+
+        .boton:hover {
+            background-color: #0F48C9;
+        }
+
+        /* PIE DE PÁGINA */
+        footer {
+            background-color: #165DFF;
+            color: white;
+            text-align: center;
+            padding: 1.2rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>José Aguilar</h1>
+        <p>Desarrollador Web | Lebrija, Santander</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Sobre mí</h2>
+            <!-- PON AQUÍ TU FOTO: cambia el enlace por el de tu foto -->
+            <img class="foto-perfil" src="https://picsum.photos/id/1012/300/300" alt="Foto de José Aguilar">
+            
+            <p>Hola, soy José Aguilar, vivo en Lebrija, Santander. Me apasiona la tecnología y crear cosas nuevas en internet. Esta es mi primera página web, hecha con mucho esfuerzo y ganas de aprender. Aquí podrás conocer un poco más de mí y de lo que hago.</p>
+            
+            <a href="#" class="boton">Contáctame</a>
+        </div>
+
+        <div class="card">
+            <h2>Lo que me gusta hacer</h2>
+            <ul>
+                <li>Aprender programación y diseño web</li>
+                <li>Crear proyectos útiles y bonitos</li>
+                <li>Conocer nuevas tecnologías</li>
+                <li>Compartir lo que aprendo con los demás</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Mis redes y contacto</h2>
+            <p>📱 WhatsApp: 300 000 0000</p>
+            <p>📷 Instagram: @joseaguilar_web</p>
+            <p>📧 Correo: jose.aguilar@ejemplo.com</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Hecho con ❤️ en Lebrija, Santander | © 2026 José Aguilar</p>
+    </footer>
+
+</body>
+</html>
